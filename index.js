@@ -18,7 +18,7 @@ import {
 
 import PropTypes from 'prop-types';
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
-export const DURATION = { 
+export const DURATION = {
     LENGTH_SHORT: 500,
     FOREVER: 0,
 };
@@ -32,7 +32,7 @@ export default class Toast extends Component {
         this.state = {
             isShow: false,
             text: '',
-            opacityValue: new Animated.Value(this.props.opacity),
+            opacityValue: new Animated.Value(0),
         }
     }
 
